@@ -1,14 +1,9 @@
 package entity
 
-type task struct {
-	taskId                 int64
-	description            string
-	maximumExecutionValue  int32
-	actualExecutionValue   int32
-	percentageOfCompletion int8
-}
-
-func New() *task {
-
-	return nil
+type Task struct {
+	TaskId                 int64  `json:"taskId"`
+	Description            string `json:"description"`
+	MaximumExecutionValue  int32  `json:"maximumExecutionValue"`
+	ActualExecutionValue   int32  `json:"actualExecutionValue"`
+	PercentageOfCompletion int8   `json:"percentageOfCompletion"`
 }
