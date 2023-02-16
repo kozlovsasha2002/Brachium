@@ -1,0 +1,6 @@
+port: "8080"
+db:
+  username: postgres
+  password: master
+  dbname: brachium
+  sslmode: disable
